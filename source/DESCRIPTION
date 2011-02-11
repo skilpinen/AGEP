@@ -1,0 +1,10 @@
+Package: AGEP
+Type: Package
+Title: Allows alignment of single profile against a reference data
+Version: 1.0-1
+Date: 2011-01-07
+Author: Sami Kilpinen
+Maintainer: Sami Kilpinen <sami.k.kilpinen@helsinki.fi>
+Description: Allows transformation of two-dimensional data matrix to a reference densities and alignment of single profile (vector) against it 
+License: Free for academic use
+LazyLoad: yes
