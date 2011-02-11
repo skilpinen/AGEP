@@ -13,7 +13,7 @@ create.ref.obj<-function(data,annotation,min.data=5,min.bw=-Inf,max.bw=Inf,resol
 
 do.match<-function(query.sample,query.annotation=NULL,query.id=NULL,ref.data.obj,verbose=TRUE,verbose.res=FALSE){
 	# Wrapper function to match one sample against reference data (object)
-	if (length(query.id>1)){stop("Function can handle only one query sample at the time!")}
+	if (length(query.id)>1){stop("Function can handle only one query sample at the time!")}
 	if (!is.vector(query.sample) | !is.numeric(query.sample)){stop("query.sample needs to be a numeric vector!")}
 	match.res<-match.query(query=query.sample,gr.que=query.annotation,que.sample.id=query.id,ref.data.obj=ref.data.obj,verbose.res=verbose.res,verbose=verbose)
 	return(match.res)
@@ -180,7 +180,7 @@ match.query<-function(query,gr.que,que.sample.id,ref.data.obj,verbose.res=TRUE,v
 	final.scores<-sort(apply(res.computed,1,mean,na.rm=T), decreasing = TRUE)
 	
 	if (verbose.res){		
-		return(list(em.scores=t(res),ts.scores=res.computed,query.id=que.sample.id,query.annotation=gr.que,tissue.scores=final.scores))
+		return(list(tm.scores=1-t(res),ts.scores=res.computed,query.id=que.sample.id,query.annotation=gr.que,tissue.scores=final.scores))
 	}
 	else {
 		return(list(query.id=que.sample.id,query.annotation=gr.que,tissue.scores=final.scores))
