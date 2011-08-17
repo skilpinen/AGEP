@@ -43,7 +43,7 @@ match.query(query, gr.que, que.sample.id, ref.data.obj, verbose.res = TRUE, verb
 %% ...
 }
 \references{
-%% ~put references to the literature/web site here ~
+Kilpinen et al.: Alignment of gene expression profiles from test samples against a reference database: New method for context-specific interpretation of microarray data. BioData Mining 2011 4:5.
 }
 \author{
 %%  ~~who you are~~

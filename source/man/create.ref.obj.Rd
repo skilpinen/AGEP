@@ -68,7 +68,7 @@ copy of the \code{annotation} argument.
 
 }
 \references{
-%% ~put references to the literature/web site here ~
+Kilpinen et al.: Alignment of gene expression profiles from test samples against a reference database: New method for context-specific interpretation of microarray data. BioData Mining 2011 4:5.
 }
 \author{
 Sami Kilpinen, Kalle Ojala

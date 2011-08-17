@@ -13,8 +13,8 @@ Allows transformation of two-dimensional data matrix to a reference densities an
 \tabular{ll}{
 Package: \tab AGEP\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2010-06-01\cr
+Version: \tab 1.1\cr
+Date: \tab 2011-08-17\cr
 License: \tab What license is it under?\cr
 LazyLoad: \tab yes\cr
 }
@@ -27,6 +27,7 @@ Maintainer:
 sami.k.kilpinen@helsinki.fi
 }
 \references{
+Kilpinen et al.: Alignment of gene expression profiles from test samples against a reference database: New method for context-specific interpretation of microarray data. BioData Mining 2011 4:5.
 }
 \keyword{ package }
 \seealso{

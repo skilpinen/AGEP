@@ -38,8 +38,8 @@ This function performs the AGEP matching of a single sample to a reference data.
 \value{
 A list with the following components:
 
-\item{em.scores}{
-a matrix with the expression match scores for each gene (feature) and each tissue (category). Returned only when \code{verbose.res} is set to \code{TRUE}.
+\item{tm.scores}{
+a matrix with the tissue match scores for each gene (feature) and each tissue (category). Returned only when \code{verbose.res} is set to \code{TRUE}.
 }
 \item{ts.scores}{
 a matrix with the tissue specificity scores for each gene (feature) and each tissue (category). Returned only when \code{verbose.res} is set to \code{TRUE}.
@@ -55,7 +55,7 @@ a numeric named vector that contains tissue similarity scores for all tissues (c
 }
 }
 \references{
-%% ~put references to the literature/web site here ~
+Kilpinen et al.: Alignment of gene expression profiles from test samples against a reference database: New method for context-specific interpretation of microarray data. BioData Mining 2011 4:5.
 }
 \author{
 Sami Kilpinen, Kalle Ojala
